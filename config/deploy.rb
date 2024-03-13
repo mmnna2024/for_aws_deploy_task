@@ -4,7 +4,7 @@ lock "~> 3.18.1"
 set :application, "cdp_web_web_aws_deploy_task"
 set :repo_url, "https://github.com/mmnna2024/for_aws_deploy_task.git"
 set :bundle_without, %w{test}.join(":")
-set :linked_files, %w{config/secrets.yml}
+set :linked_files, %w{config/secrets.yml .env}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 set :keep_releases, 5
 set :rbenv_ruby, "3.0.1"
