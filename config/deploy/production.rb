@@ -51,9 +51,9 @@
 # ------------------------------------
 server "18.176.102.72",
   user: "ec2-user",
-  roles: %w{web app},
+  roles: %w{web db app},
   ssh_options: {
-    user: "user_name", # overrides user setting above
+    user: "ec2-user", # overrides user setting above
     keys: %{~/workspace/dpro/task/aws_deploy_task.pem},
     forward_agent: false,
     auth_methods: %w(publickey password)
